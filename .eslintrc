@@ -1,0 +1,63 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "standard-with-typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "strict": 0,
+    "vars-on-top": "error",
+    "generator-star-spacing": ["error", { "before": true, "after": false }],
+    "comma-dangle": ["error", "always-multiline"],
+    "array-bracket-23": ["off"],
+    "no-multiple-empty-lines": ["off"],
+    "space-before-function-paren": ["off"],
+    "no-return-assign": ["off"],
+    "camelcase": ["off"],
+    "no-unused-vars": ["off"],
+    "space-infix-ops": "warn",
+    "no-trailing-spaces": ["off"],
+    "no-debugger": ["off"],
+    "no-new": "off",
+    "ts-ignore": "off",
+    "prefer-const": "error",
+    "space-before-blocks": "warn",
+    "arrow-spacing": "warn",
+    "@typescript-eslint/quotes": ["error", "single"],
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/semi": ["error", "never"],
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/return-await": "off",
+    "@typescript-eslint/promise-function-async": "off",
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "none"
+        },
+        "singleline": {
+          "delimiter": "comma"
+        }
+      }
+    ]
+  }
+}

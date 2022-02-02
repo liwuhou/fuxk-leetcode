@@ -1,0 +1,5 @@
+node_modules
+packages/**/*.md
+packages/**/*.mdx
+package.json
+coverage
