@@ -4,7 +4,6 @@ import type { DefaultThemeOptions } from '@vuepress/theme-default'
 import { navbar, sidebar } from './config'
 import { getCodePath } from './utils'
 import path from 'path'
-import fs from 'fs'
 
 export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   base: '/',
@@ -31,6 +30,11 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
         openInNewWindow: '在新窗口打开',
         toggleDarkMode: '切换夜间模式',
         toggleSidebar: '切换侧边栏',
+        label: '简体中文',
+        selectText: '选择语言',
+        ariaLabel: '选择语言',
+        editLinkText: '在 GitHub 上编辑此页',
+        lastUpdatedText: '上次更新',
       },
       '/en/': {
         selectLanguageName: 'English',
@@ -53,13 +57,24 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     },
   },
   host: 'localhost',
-  port: 3000,
+  port: 5555,
   markdown: {
     importCode: {
       handleImportPath: (str) => {
         if (str.includes('@@')) return getCodePath(str)
 
         return str
+      },
+    },
+  },
+  bundler: '@vuepress/bundler-vite',
+  bundlerConfig: {
+    // 查看下方
+    viteOptions: {
+      server: {
+        watch: {
+          ignored: ['!**/node_modules/**'],
+        },
       },
     },
   },

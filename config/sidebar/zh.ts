@@ -4,7 +4,7 @@ import { getFiles } from '../../utils'
 export const zh: SidebarConfig = {
   '/basic/': [
     {
-      text: '初级',
+      text: '基础',
       collapsible: true,
       children: [
         {
