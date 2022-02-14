@@ -1,7 +1,3 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
 export function findMiddleIndex(nums: number[]): number {
   for (let i = 0; i < nums.length; i++) {
     let sum = 0
