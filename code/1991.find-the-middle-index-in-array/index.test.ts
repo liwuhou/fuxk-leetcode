@@ -1,5 +1,4 @@
-import { findMiddleIndex } from './index'
-import { findMiddleIndex as findMiddleIndexBetter } from './better'
+import { findMiddleIndex, findMiddleIndexBetter } from './index'
 
 test('test ', () => {
   expect(findMiddleIndex([1, 2, 1])).toBe(1)

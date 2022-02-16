@@ -11,6 +11,10 @@ export const zh: SidebarConfig = {
           text: '数组',
           children: getFiles('basic', 'array'),
         },
+        {
+          text: '链表',
+          children: getFiles('basic', 'linked-list'),
+        },
         // {
         //   text: '字符串',
         //   children: getFiles('basic', 'string'),
