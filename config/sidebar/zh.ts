@@ -18,7 +18,12 @@ export const zh: SidebarConfig = {
     },
     {
       text: '链表',
+
       children: getFiles('basic', 'linked-list'),
+    },
+    {
+      text: '栈',
+      children: getFiles('basic', 'stack'),
     },
     // {
     //   text: '字符串',

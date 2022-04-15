@@ -7,6 +7,6 @@ export const zh: NavbarConfig = [
   },
   {
     link: '/basic/1991.array.html',
-    text: '基础',
+    text: '算法基础',
   },
 ]
