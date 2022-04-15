@@ -1,5 +1,5 @@
-import path from 'path'
-import fs from 'fs'
+import path from 'node:path'
+import fs from 'node:fs'
 
 export const docsPath = path.resolve(__dirname, '..', 'docs')
 export const codePath = path.resolve(__dirname, '..', 'code')

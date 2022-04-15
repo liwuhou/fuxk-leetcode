@@ -22,7 +22,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
         danger: '警告',
         notFound: [
           '这里什么都没有',
-          '我们怎么到这来了？',
+          '我去，你怎么跑这来了？',
           '这是一个 404 页面',
           '看起来我们进入了错误的链接',
         ],
@@ -51,10 +51,10 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
       title: 'Fuxk Leetcode',
       description: '手撕 Leetcode 算法题',
     },
-    '/en/': {
-      lang: 'en-US',
-      title: 'Fuxk leetcode',
-    },
+    // '/en/': {
+    //   lang: 'en-US',
+    //   title: 'Fuxk leetcode',
+    // },
   },
   host: 'localhost',
   port: 5555,

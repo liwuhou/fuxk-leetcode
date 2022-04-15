@@ -1,6 +1,6 @@
 import { findMiddleIndex, findMiddleIndexBetter } from './index'
 
-test('test ', () => {
+test('test', () => {
   expect(findMiddleIndex([1, 2, 1])).toBe(1)
 })
 

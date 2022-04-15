@@ -1,12 +1,12 @@
-import RawListNode from '../structure/linked-list'
+import ListNode from '../structure/Linked-List'
 
-type ListNode = RawListNode<number>
+type IListNode = ListNode<number>
 
 export function mergeTwoLists(
-  list1: ListNode | null,
-  list2: ListNode | null,
-): ListNode | null {
-  let dump: ListNode = new RawListNode<number>(-1)
+  list1: IListNode | null,
+  list2: IListNode | null,
+): IListNode | null {
+  let dump: IListNode = new ListNode<number>(-1)
   let curr = dump
   let p1 = list1,
     p2 = list2
