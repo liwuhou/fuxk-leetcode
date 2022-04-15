@@ -8,7 +8,7 @@
     "preinstall": "npx pm-keeper yarn",
     "test": "jest ./code",
     "dev": "vuepress dev docs --config vuepress.config.ts",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs --config vuepress.config.ts"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",

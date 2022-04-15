@@ -6,7 +6,7 @@ import { getRealPathFromAlias, getCodePath } from './utils'
 import path from 'node:path'
 
 export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
-  base: '/',
+  base: '/fuxk-leetcode/',
   themeConfig: {
     logo: 'logo.png',
     repo: 'liwuhou/fuxk-leetcode',
@@ -81,6 +81,12 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
         watch: {
           ignored: ['!**/node_modules/**'],
         },
+      },
+      build: {
+        target: 'esnext',
+        outDir: './dist',
+        assetsDir: 'public',
+        emptyOutDir: true,
       },
     },
   },
