@@ -2,8 +2,8 @@ import type { ViteBundlerOptions } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
 import type { DefaultThemeOptions } from '@vuepress/theme-default'
 import { navbar, sidebar } from './config'
-import { getCodePath } from './utils'
-import path from 'path'
+import { getRealPathFromAlias, getCodePath } from './utils'
+import path from 'node:path'
 
 export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   base: '/',
@@ -42,9 +42,6 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     },
   },
   head: [['link', { rel: 'icon', href: 'logo.png' }]],
-  alias: {
-    '@public': path.resolve(__dirname, 'public'),
-  },
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -62,6 +59,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     importCode: {
       handleImportPath: (str) => {
         if (str.includes('@@')) return getCodePath(str)
+        if (str.includes('@')) return getRealPathFromAlias(str)
 
         return str
       },
@@ -71,6 +69,14 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   bundlerConfig: {
     // 查看下方
     viteOptions: {
+      resolve: {
+        alias: {
+          '@public': path.resolve(__dirname, 'public'),
+          '@code': path.resolve(__dirname, 'code'),
+          '@structure': path.resolve(__dirname, 'code', 'structure'),
+        },
+        extensions: ['.mjs', '.js', '.ts', '.json'],
+      },
       server: {
         watch: {
           ignored: ['!**/node_modules/**'],

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": ["ES2015", "DOM"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@code": ["code"],
+      "@code/*": ["code/*"],
+      "@structure": ["code/structure/index.ts"],
+      "@structure/*": ["code/structure/*"]
+    }
+  },
+  "include": ["code/**/*.ts"],
+  "exclude": ["dist", "coverage", "docs", "node_modules"]
+}

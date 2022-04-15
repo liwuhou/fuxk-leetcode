@@ -2,10 +2,9 @@ import Stack from './index'
 
 const stack = new Stack<number>()
 
-test('test', () => {
+test('test init', () => {
   expect(stack.isEmpty()).toBeTruthy()
   expect(stack.length).toBe(0)
-  expect(stack.getItems()).toEqual({})
   expect(stack.peek()).toBeNull()
 })
 

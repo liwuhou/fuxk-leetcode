@@ -23,10 +23,7 @@ export default class Stack<T = any> {
   }
 
   peek(): T | null {
-    if (this.isEmpty()) {
-      return null
-    }
-    return this.#stack[this.length - 1]
+    return this.#stack?.[this.length - 1] ?? null
   }
 
   isEmpty(): boolean {
