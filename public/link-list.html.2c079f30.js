@@ -1,0 +1,1 @@
+const t={key:"v-64f7dcfd",path:"/structure/link-list.html",title:"\u94FE\u8868",lang:"zh-CN",frontmatter:{title:"\u94FE\u8868",date:"2022-04-14T00:00:00.000Z"},excerpt:"",headers:[],git:{updatedTime:1649983893e3,contributors:[{name:"\u963F\u4E94",email:"hugewilliam@foxmail.com",commits:1}]},filePathRelative:"structure/link-list.md"};export{t as data};

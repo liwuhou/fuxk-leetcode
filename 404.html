@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.35">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="logo.png"><title>Fuxk Leetcode</title><meta name="description" content="手撕 Leetcode 算法题">
+    <link rel="modulepreload" href="/fuxk-leetcode/public/app.3ab3c8b6.js"><link rel="modulepreload" href="/fuxk-leetcode/public/404.html.6c57fdff.js"><link rel="modulepreload" href="/fuxk-leetcode/public/404.html.4bfc2f3b.js"><link rel="modulepreload" href="/fuxk-leetcode/public/plugin-vue_export-helper.db8f5083.js">
+    <link rel="stylesheet" href="/fuxk-leetcode/public/style.b266fe58.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><div class="theme-default-content"><h1>404</h1><blockquote>这里什么都没有</blockquote><a href="/fuxk-leetcode/" class="">返回首页</a></div></div><!----><!--]--></div>
+    <script type="module" src="/fuxk-leetcode/public/app.3ab3c8b6.js" defer></script>
+  </body>
+</html>

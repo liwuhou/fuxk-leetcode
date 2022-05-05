@@ -1,0 +1,1 @@
+const t={key:"v-37ce5de6",path:"/structure/stack.html",title:"\u6808",lang:"zh-CN",frontmatter:{title:"\u6808",date:"2022-04-14T00:00:00.000Z"},excerpt:"",headers:[],git:{updatedTime:1650015417e3,contributors:[{name:"\u963F\u4E94",email:"hugewilliam@foxmail.com",commits:2}]},filePathRelative:"structure/stack.md"};export{t as data};

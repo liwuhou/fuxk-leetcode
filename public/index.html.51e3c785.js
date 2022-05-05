@@ -1,0 +1,1 @@
+const e={key:"v-8daa1a0e",path:"/",title:"Home",lang:"zh-CN",frontmatter:{home:!0,title:"Home",heroImage:"logo.png",actions:[{text:"\u5F00\u6495",link:"/basic/1991.array",type:"primary"}]},excerpt:"",headers:[],git:{updatedTime:1650030339e3,contributors:[{name:"\u963F\u4E94",email:"hugewilliam@foxmail.com",commits:2}]},filePathRelative:"README.md"};export{e as data};
