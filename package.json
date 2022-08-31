@@ -5,7 +5,7 @@
   "author": "阿五 <hugewilliam@foxmail.com>",
   "license": "MIT",
   "scripts": {
-    "preinstall": "npx pm-keeper yarn",
+    "preinstall": "npx pm-keeper pnpm",
     "test": "jest ./code",
     "dev": "vuepress dev docs --config vuepress.config.ts",
     "build": "vuepress build docs --config vuepress.config.ts"
