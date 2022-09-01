@@ -1,6 +1,6 @@
 import ListNode from '@code/structure/Linked-List'
 
-export function hasCycle<NodeType = number>(
+export default function hasCycle<NodeType = number>(
   head: ListNode<NodeType> | null,
 ): boolean {
   if (!head || !head.next) return false
