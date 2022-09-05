@@ -1,5 +1,5 @@
 import hasCycle from '.'
-import ListNode from '@code/structure/Linked-List'
+import ListNode from '../structure/Linked-List'
 
 const normalList: ListNode<string> = new ListNode(
   'a',

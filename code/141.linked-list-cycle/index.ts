@@ -1,4 +1,4 @@
-import ListNode from '@code/structure/Linked-List'
+import ListNode from '../structure/Linked-List'
 
 export default function hasCycle<NodeType = number>(
   head: ListNode<NodeType> | null,
