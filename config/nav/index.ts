@@ -1,6 +1,6 @@
-import type { NavbarConfig } from '@vuepress/theme-default'
+import type { DefaultTheme } from 'vitepress'
 
-export const zh: NavbarConfig = [
+export const nav: DefaultTheme.NavItem[] = [
   {
     link: '/structure/stack.html',
     text: '数据结构',

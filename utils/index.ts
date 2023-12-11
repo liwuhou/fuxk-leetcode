@@ -1,3 +1,4 @@
+import { DefaultTheme } from 'vitepress'
 import path from 'node:path'
 import fs from 'node:fs'
 
@@ -7,6 +8,14 @@ export const codePath = path.resolve(__dirname, '..', 'code')
 export enum ALIAS_MAP {
   CODE = '@code',
   STRUCTURE = '@structure',
+}
+
+export const getDocsFiles = (filepath: string): DefaultTheme.SidebarItem[] => {
+  return fs.readdirSync(path.resolve(docsPath, filepath)).map((filename) => {
+    // const [_index, codeType] = filename.split('.')
+    // return type === codeType
+    return { link: path.resolve(docsPath, filepath, filename), text: filename }
+  })
 }
 
 export const getFiles = (filepath, type) => {

@@ -1,10 +1,11 @@
 # fuxk-leetcode
+
 手撕 leetcode（小声）
 
 run
 
 ```bash
-yarn install
+pnpm install
 
-yarn dev 
+pnpm run dev
 ```
